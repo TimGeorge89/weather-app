@@ -1,0 +1,75 @@
+@import 'normalize';
+@import 'variables';
+@import 'animations';
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+// globals
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', ;
+  color: $dark;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+button {
+  padding: 15px 30px;
+  background: $accent;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: $transition;
+  color: $light;
+  text-transform: uppercase;;
+  letter-spacing: 2px;
+  border-radius: $border-radius;
+
+  &:hover {
+    background: darken($accent, 5%);
+  }
+}
+
+// forms
+input[type="text"] {
+  font-size: 16px;
+  padding: 13px;
+}

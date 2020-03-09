@@ -7,7 +7,7 @@
         <p>Get your local weather</p>
         <input v-model="searchValue" @keydown.enter="fetchWeather()" type="text" placeholder="search by zip or city">
         <button @click="fetchWeather()">Search</button>
-        <p v-if="showResultsError" class="error">There were no results, try a differnt zip.</p>
+        <p v-if="showResultsError" class="error">There were no results, try a different zip.</p>
       </div>
       <!-- RESULTS -->
       <div v-else class="results">
